@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Show Button</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+    margin-top: 100px;
+}
+
+button{
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+
+#videoBox{
+    display: none;
+    margin-top: 30px;
+}
+
+video{
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Don't touch the button</h1>
+
+<button onclick="showVideo()">Touch and see the reaction</button>
+
+<div id="videoBox">
+    <video controls>
+        <source src="C:\Users\soura\Videos\0305 (1).mp4"type="video/mp4">
+        Your browser does not support video.
+    </video>
+</div>
+
+<script>
+function showVideo(){
+    document.getElementById("videoBox").style.display = "block";
+}
+</script>
+
+</body>
+</html>
